@@ -41,6 +41,14 @@ uvicorn main:app --reload
 
 Send a get request with postman (or EchoAPI) to test the endpoint.
 
+## Note: OpenAPI (Swagger) UI
+
+Interactive API documentation automatically generated for your endpoints. When you build an API with FastAPI, it uses the OpenAPI standard (formerly known as Swagger) to describe your API. FastAPI provides a built-in Swagger UI at /docs, where you can:
+
+**View all available endpoints** and their details.
+**Test API calls** directly from the browser.
+See request/response formats and validation rules.
+
 ## To Do App
 
 pydantic provides a BaseModel class that provides data validation
