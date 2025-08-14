@@ -38,3 +38,14 @@ Run the server
 ```bash
 uvicorn main:app --reload
 ```
+
+Send a get request with postman (or EchoAPI) to test the endpoint.
+
+## To Do App
+
+pydantic provides a BaseModel class that provides data validation
+for any class that inherits it.
+
+Make a TodoItem(BaseModel) class in `models.py`, and set up the endpoints.
+
+Note: Todo data is stored as temp, and resets hwne the server is refreshed.
