@@ -18,3 +18,23 @@ Refer to the [FastAPI User Guide](https://fastapi.tiangolo.com/tutorial/)
 pip install fastapi
 pip install "uvicorn[standard]"
 ```
+
+Create `main.py`
+
+Instantiate FastAPI and create a get request method.
+
+```python
+from fastapi import FastAPI
+
+app = FastAPI()
+
+@app.get("/")
+async def read_root():
+    return {"message": "Hello, World!"}
+```
+
+Run the server
+
+```bash
+uvicorn main:app --reload
+```
